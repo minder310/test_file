@@ -1,0 +1,30 @@
+[18-Jul-2023 09:25:22 Europe/London] PHP Warning:  include_once(db.php): failed to open stream: No such file or directory in /home/obqqtklj/admin.beautylink.com.tw/public/vote/game_all.php on line 2
+[18-Jul-2023 09:25:22 Europe/London] PHP Warning:  include_once(): Failed opening 'db.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/obqqtklj/admin.beautylink.com.tw/public/vote/game_all.php on line 2
+[18-Jul-2023 09:25:22 Europe/London] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/obqqtklj/admin.beautylink.com.tw/public/vote/game_all.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/obqqtklj/admin.beautylink.com.tw/public/vote/game_all.php on line 6
+[18-Jul-2023 16:27:55 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function jia() in /home/obqqtklj/admin.beautylink.com.tw/public/vote/game_all.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/obqqtklj/admin.beautylink.com.tw/public/vote/game_all.php on line 27
+[18-Jul-2023 16:28:01 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function jia() in /home/obqqtklj/admin.beautylink.com.tw/public/vote/game_all.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/obqqtklj/admin.beautylink.com.tw/public/vote/game_all.php on line 27
+[18-Jul-2023 16:28:03 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function jia() in /home/obqqtklj/admin.beautylink.com.tw/public/vote/game_all.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/obqqtklj/admin.beautylink.com.tw/public/vote/game_all.php on line 27
+[18-Jul-2023 16:29:13 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to undefined function jia() in /home/obqqtklj/admin.beautylink.com.tw/public/vote/game_all.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/obqqtklj/admin.beautylink.com.tw/public/vote/game_all.php on line 27
+[18-Jul-2023 16:39:17 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/obqqtklj/admin.beautylink.com.tw/public/vote/game.php:65
+Stack trace:
+#0 {main}
+  thrown in /home/obqqtklj/admin.beautylink.com.tw/public/vote/game.php on line 65
+[18-Jul-2023 16:39:33 Asia/Taipei] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/obqqtklj/admin.beautylink.com.tw/public/vote/game.php:65
+Stack trace:
+#0 {main}
+  thrown in /home/obqqtklj/admin.beautylink.com.tw/public/vote/game.php on line 65
