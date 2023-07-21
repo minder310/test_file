@@ -47,7 +47,7 @@ include_once "../../function/function.php";
             background: linear-gradient(90deg, #0278F6 0%, #0A9BD6 50%, #09DFEB 100%);
             /* Button color gradient */
             margin: 5px;
-            font-size: 100px;
+            font-size: 70px;
             border-radius: 15px;
             transition: 0.3s;
             color: white;
@@ -78,7 +78,7 @@ include_once "../../function/function.php";
             .button {
                 width: 100px;
                 height: 100px;
-                font-size: 40px;
+                font-size: 20px;
             }
 
             .text-container {
@@ -90,7 +90,7 @@ include_once "../../function/function.php";
             .button {
                 width: 200px;
                 height: 200px;
-                font-size: 60px;
+                font-size: 40px;
             }
 
             .text-container {
@@ -103,7 +103,7 @@ include_once "../../function/function.php";
             .button {
                 width: 250px;
                 height: 250px;
-                font-size: 80px;
+                font-size: 50px;
             }
 
             .text-container {
@@ -116,7 +116,7 @@ include_once "../../function/function.php";
             .button {
                 width: 300px;
                 height: 300px;
-                font-size: 100px;
+                font-size: 70px;
             }
 
             .text-container {
@@ -169,7 +169,13 @@ include_once "../../function/function.php";
     } else {
         $ip = $_SERVER["REMOTE_ADDR"];
     }
-
+    // 小小寫個轉換資料庫。
+    $name2 = [
+        1 => "Kevin",
+        2 => "Jeff",
+        3 => "LingYun",
+        4 => "Jackie"
+    ];
     ?>
     <div class="text-container">你要投給哪一組</div>
     <form class="button-container" method="GET" action="game_1.php">
@@ -185,9 +191,9 @@ include_once "../../function/function.php";
     <div class="text-container" id="textDisplay"></div>
     <script>
         // 假設後台傳遞的按鈕文字和文字顯示格文字存儲在以下變量中
-        var button1Text = <?= $choose_group[0]; ?>;
-        var button2Text = <?= $choose_group[1]; ?>;
-        var button3Text = <?= $choose_group[2]; ?>;
+        var button1Text = "<?= $name2[$choose_group[0]]; ?>";
+        var button2Text = "<?= $name2[$choose_group[1]]; ?>";
+        var button3Text = "<?= $name2[$choose_group[2]]; ?>";
         var textDisplayText = "<?= $name ?>";
 
         // 更新按鈕文字

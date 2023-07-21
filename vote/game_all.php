@@ -61,25 +61,11 @@ $all = $conn->query($all_sql)->fetch_all();
 
         .table-container {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100%;
-            /* 100% of the viewport height */
-            padding: 200px;
-            /* Add a padding to avoid the table sticking to the edges */
-        }
-
-        .table-container {
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            justify-content: center;
-            height: 100%;
-            padding: 200px;
-        }
-
-        .table-container .styled-table:first-child {
-            margin-right: 50px;
+            height: auto;
+            padding: 20px;
         }
     </style>
 </head>
@@ -120,7 +106,7 @@ $all = $conn->query($all_sql)->fetch_all();
                 <th>紀錄ip</th>
             </tr>
             <?php
-            for ($i = 0; $i < 32; $i++) {
+            for ($i = 0; $i < 40; $i++) {
                 if (!empty($all[$i][5])) {
                     $groupClass = 'group-' . $all[$i][2]; // 這邊假設 $all[$i][2] 是組別數字
             ?>

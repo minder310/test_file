@@ -16,6 +16,13 @@ $updata_sql =
     `selected_ip`='$ip' 
     WHERE name='$name'";
 $conn->query($updata_sql);
+// 小小寫個轉換資料庫。
+$name2 = [
+    1 => "Kevin",
+    2 => "Jeff",
+    3 => "LingYun",
+    4 => "Jackie"
+];
 ?>
 <!DOCTYPE html>
 <html>
@@ -66,7 +73,7 @@ $conn->query($updata_sql);
 <body>
     <div id="particles-js"></div>
     <h1 class="title"><?= $name ?></h1>
-    <h2 class="subtitle"><?= $choose_group ?></h2>
+    <h2 class="subtitle"><?= $name2[$choose_group] ?></h2>
     <script>
         particlesJS("particles-js", {
             particles: {
